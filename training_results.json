@@ -1,0 +1,91 @@
+{
+  "best_model_name": "Random Forest",
+  "best_metrics": {
+    "Accuracy": 0.9992951045007578,
+    "Precision": 0.7956989247311828,
+    "Recall": 0.7789473684210526,
+    "F1 Score": 0.7872340425531915,
+    "ROC-AUC": 0.9727066647218567
+  },
+  "all_results": {
+    "Logistic Regression": {
+      "Accuracy": 0.9737250202657456,
+      "Precision": 0.05313700384122919,
+      "Recall": 0.8736842105263158,
+      "F1 Score": 0.10018105009052504,
+      "ROC-AUC": 0.9618504434817429
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9841574736545308,
+      "Precision": 0.07773109243697479,
+      "Recall": 0.7789473684210526,
+      "F1 Score": 0.1413562559694365,
+      "ROC-AUC": 0.8256415783063243
+    },
+    "Random Forest": {
+      "Accuracy": 0.9992951045007578,
+      "Precision": 0.7956989247311828,
+      "Recall": 0.7789473684210526,
+      "F1 Score": 0.7872340425531915,
+      "ROC-AUC": 0.9727066647218567
+    },
+    "XGBoost": {
+      "Accuracy": 0.9974271314277658,
+      "Precision": 0.37681159420289856,
+      "Recall": 0.8210526315789474,
+      "F1 Score": 0.5165562913907285,
+      "ROC-AUC": 0.9711719679775245
+    }
+  },
+  "feature_names": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "dataset_summary": {
+    "shape": [
+      284807,
+      31
+    ],
+    "missing_values": "0",
+    "duplicates": "1081",
+    "fraud_count": "492",
+    "legitimate_count": "284315",
+    "fraud_percentage": 0.1727485630620034
+  },
+  "insights": [
+    "\ud83d\udcca SEVERE CLASS IMBALANCE: Only 492 (0.173%) of 284,807 transactions are fraudulent.",
+    "\ud83d\udcb0 FRAUD AMOUNT: Mean fraud amount ($122.21) vs legitimate ($88.29). Max fraud: $2125.87.",
+    "\ud83d\udd0d SMALL TRANSACTIONS: 362 (73.6%) of fraud transactions are under $100, making them harder to detect.",
+    "\ud83d\udd17 TOP CORRELATED FEATURES: V17 (0.326), V14 (0.303), V12 (0.261)",
+    "\u23f0 TIME PATTERN: Fraud peaks around hour 2 from the start of recording.",
+    "\u2705 DATA QUALITY: No missing values found. Dataset is clean."
+  ]
+}
